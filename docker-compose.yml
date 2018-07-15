@@ -17,5 +17,7 @@ services:
                 condition: on-failure
         ports:
             - "9000:9000"
+        volumes:
+            - "/app/rest-app:/var/www/html"
         networks:
             - network-stack_webnet

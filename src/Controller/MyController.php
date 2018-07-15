@@ -14,7 +14,7 @@ class MyController extends ControllerAbstract
                 'serverName' => $request->getServer(['SERVER_NAME'])['SERVER_NAME'],
                 'serverPort' => $request->getServer(['SERVER_PORT'])['SERVER_PORT'],
                 'httpHost' => $request->getServer(['HTTP_HOST'])['HTTP_HOST'],
-                'hostName' => $request->getServer(['HOSTNAME'])['HOSTNAME'],
+                'hostName' => $request->getServer(['HOSTNAME'])['HOSTNAME']
             ],
             ['serverName' => 'raw', 'serverPort' => 'raw', 'httpHost' => 'raw', 'hostName' => 'raw']);
     }
