@@ -1,0 +1,15 @@
+{
+    "name": "lukasztecza/sampleApp",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lukasztecza/lightApp"
+       }
+    ],
+    "require": {
+        "lukasztecza/lightApp": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "SampleApp\\": "src/" }
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "defaultContentType": "application/json",
+    "applicationStartingPoint": "simpleOutputMiddleware"
+}

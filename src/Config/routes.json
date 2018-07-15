@@ -1,0 +1,8 @@
+[
+    {
+        "path": "/",
+        "methods": ["GET"],
+        "controller": "myController",
+        "action": "home"
+    }
+]

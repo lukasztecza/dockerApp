@@ -1,0 +1,19 @@
+{
+    "simpleOutputMiddleware": {
+        "class": "LightApp\\Model\\Middleware\\SimpleOutputMiddleware",
+        "inject": [
+            "@controllerMiddleware@",
+            "%defaultContentType%"
+        ]
+    },
+    "controllerMiddleware": {
+        "class": "LightApp\\Model\\Middleware\\ControllerMiddleware",
+        "inject": [
+            "%routedController%",
+            "%routedAction%"
+        ]
+    },
+    "myController": {
+        "class": "SampleApp\\Controller\\MyController"
+    }
+}

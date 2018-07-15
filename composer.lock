@@ -1,0 +1,71 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "efdbc0c820ca11c4e79659ad30de9d3e",
+    "content-hash": "75037faf97eff6bdb3bf0a974bb55b8e",
+    "packages": [
+        {
+            "name": "lukasztecza/lightApp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukasztecza/lightApp.git",
+                "reference": "a0d273c3b715119cf98cf372fdb0c89d6b7b56ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukasztecza/lightApp/zipball/a0d273c3b715119cf98cf372fdb0c89d6b7b56ee",
+                "reference": "a0d273c3b715119cf98cf372fdb0c89d6b7b56ee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LightApp\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukasz Tecza",
+                    "email": "lukasztecza.pl@gmail.com",
+                    "homepage": "http://lukasztecza.pl"
+                }
+            ],
+            "description": "Light php application base",
+            "keywords": [
+                "app",
+                "base",
+                "dependency",
+                "framework",
+                "php"
+            ],
+            "support": {
+                "source": "https://github.com/lukasztecza/lightApp/tree/master",
+                "issues": "https://github.com/lukasztecza/lightApp/issues"
+            },
+            "time": "2018-07-14 17:29:35"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "lukasztecza/lightapp": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
