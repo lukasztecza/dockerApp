@@ -7,7 +7,6 @@ networks:
 services:
     rest-app:
         image: rest-app:latest
-        build: "/vagrant/rest-app/."
         deploy:
             replicas: 2
             resources:
