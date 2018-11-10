@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "efdbc0c820ca11c4e79659ad30de9d3e",
     "content-hash": "75037faf97eff6bdb3bf0a974bb55b8e",
     "packages": [
         {
@@ -13,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lukasztecza/lightApp.git",
-                "reference": "a0d273c3b715119cf98cf372fdb0c89d6b7b56ee"
+                "reference": "86cf5c540add203de394bbae34ed8bf6c3c9c004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lukasztecza/lightApp/zipball/a0d273c3b715119cf98cf372fdb0c89d6b7b56ee",
-                "reference": "a0d273c3b715119cf98cf372fdb0c89d6b7b56ee",
+                "url": "https://api.github.com/repos/lukasztecza/lightApp/zipball/86cf5c540add203de394bbae34ed8bf6c3c9c004",
+                "reference": "86cf5c540add203de394bbae34ed8bf6c3c9c004",
                 "shasum": ""
             },
             "require": {
@@ -52,10 +51,10 @@
                 "php"
             ],
             "support": {
-                "source": "https://github.com/lukasztecza/lightApp/tree/master",
+                "source": "https://github.com/lukasztecza/lightApp/tree/1.2.4",
                 "issues": "https://github.com/lukasztecza/lightApp/issues"
             },
-            "time": "2018-07-14 17:29:35"
+            "time": "2018-09-04T17:40:44+00:00"
         }
     ],
     "packages-dev": [],

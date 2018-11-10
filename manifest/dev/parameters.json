@@ -1,0 +1,9 @@
+{
+    "environment": "dev",
+    "databaseEngine": "mysql",
+    "databaseHost": "app-mysql-server",
+    "databasePort": "3306",
+    "databaseName": "app_database",
+    "databaseUser": "user",
+    "databasePassword": "pass"
+}
