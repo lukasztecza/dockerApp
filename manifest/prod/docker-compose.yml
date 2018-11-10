@@ -6,7 +6,7 @@ networks:
         external: true
 
 services:
-    rest-app:
+    app:
         image: rest-app:latest
         deploy:
             replicas: 3

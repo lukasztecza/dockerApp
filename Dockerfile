@@ -4,4 +4,6 @@ ADD /vendor /var/www/html/vendor
 ADD /src /var/www/html/src
 ADD /public /var/www/html/public
 
+RUN docker-php-ext-install pdo pdo_mysql
+
 EXPOSE 9000

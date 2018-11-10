@@ -1,0 +1,9 @@
+{
+    "environment": "prod",
+    "databaseEngine": "mysql",
+    "databaseHost": "some-real-sql-host",
+    "databasePort": "3306",
+    "databaseName": "some-real-database",
+    "databaseUser": "some-real-user",
+    "databasePassword": "some-real-pass"
+}

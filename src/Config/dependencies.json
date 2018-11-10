@@ -13,7 +13,34 @@
             "%routedAction%"
         ]
     },
+    "writeConnection": {
+        "class": "LightApp\\Model\\Repository\\PdoDatabaseConnection",
+        "inject": [
+            "%databaseEngine%",
+            "%databaseHost%",
+            "%databasePort%",
+            "%databaseName%",
+            "%databaseUser%",
+            "%databasePassword%"
+        ]
+    },
+    "myRepository" : {
+        "class": "App\\Model\\Repository\\MyRepository",
+        "inject": [
+            "@writeConnection@",
+            "@writeConnection@"
+        ]
+    },
+    "myService": {
+        "class": "App\\Model\\Service\\MyService",
+        "inject": [
+            "@myRepository@"
+        ]
+    },
     "myController": {
-        "class": "SampleApp\\Controller\\MyController"
+        "class": "App\\Controller\\MyController",
+        "inject": [
+            "@myService@"
+        ]
     }
 }

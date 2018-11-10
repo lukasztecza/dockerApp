@@ -1,0 +1,46 @@
+version: "3.5"
+
+networks:
+    webnet:
+        name: default-docker-apps-network
+        external: true
+
+services:
+    app:
+        image: rest-app:latest
+        deploy:
+            replicas: 3
+            resources:
+                limits:
+                    cpus: "0.1"
+                    memory: 50M
+            restart_policy:
+                condition: on-failure
+        ports:
+            - "9000:9000"
+        volumes:
+            - "./../../:/var/www/html"
+        networks:
+            - webnet
+    app-mysql-server:
+        image: mysql-server:latest
+        deploy:
+            replicas: 1
+            resources:
+                limits:
+                    cpus: "0.1"
+                    memory: 50M
+            restart_policy:
+                condition: on-failure
+        ports:
+            - "3306:3306"
+        volumes:
+#            - "./mysql:/var/lib/mysql"
+            - "./sql:/var/dev_db"
+        environment:
+            - MYSQL_ROOT_PASSWORD=root_pass
+            - MYSQL_DATABASE=app_database
+            - MYSQL_USER=user
+            - MYSQL_PASSWORD=pass
+        networks:
+            - webnet
