@@ -7,7 +7,7 @@ networks:
 
 services:
     app:
-        image: rest-app:latest
+        image: app:latest
         deploy:
             replicas: 3
             resources:

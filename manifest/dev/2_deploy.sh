@@ -1,5 +1,5 @@
 #!/bin/bash
-CURRENT_DIR=$(dirname $0);
+CURRENT_DIR=$(dirname $0)
 docker stack deploy -c "$CURRENT_DIR/docker-compose.yml" app
 
 COUNTER=0
@@ -25,5 +25,6 @@ echo "Restarting web server"
 sleep 5
 WEB_SERVER_CONTAINER="$(docker container ls -a -q -f name=dnw_web-server -f status=running)"
 docker service scale dnw_web-server=2
+docker container stop $WEB_SERVER_CONTAINER
 docker container rm $WEB_SERVER_CONTAINER
 docker service scale dnw_web-server=1

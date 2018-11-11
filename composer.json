@@ -1,5 +1,5 @@
 {
-    "name": "lukasztecza/sampleApp",
+    "name": "lukasztecza/dockerApp",
     "repositories": [
         {
             "type": "vcs",
