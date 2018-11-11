@@ -8,6 +8,9 @@ Sample php app in docker
 - init swarm following readme in dockerWebServer
 - deploy dockerWebServer
 - build app
+```
+bash manifest/dev/1_build.sh
+```
 - create `srv/Config/parameters.json`
 ```
 {
@@ -21,3 +24,7 @@ Sample php app in docker
 }
 ```
 - deploy app
+
+```
+bash manifest/dev/2_deploy.sh
+```
