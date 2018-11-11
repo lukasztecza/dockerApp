@@ -28,3 +28,15 @@ bash manifest/dev/1_build.sh
 ```
 bash manifest/dev/2_deploy.sh
 ```
+- update your `/etc/hosts` file adding
+```
+127.0.0.1 www.app.com
+```
+- now you can hit in browser to see the app output
+```
+www.app.com
+```
+- or to see visualizer (if you deployed web server with visualizer)
+```
+www.app.com:8080
+```
