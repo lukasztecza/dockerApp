@@ -16,8 +16,6 @@ services:
                     memory: 50M
             restart_policy:
                 condition: on-failure
-        ports:
-            - "9000:9000"
         volumes:
             - "./../../:/var/www/html"
         networks:
@@ -32,10 +30,8 @@ services:
                     memory: 50M
             restart_policy:
                 condition: on-failure
-        ports:
-            - "3306:3306"
         volumes:
-#            - "./mysql:/var/lib/mysql"
+            - "./db_data:/var/lib/mysql"
             - "./sql:/var/dev_db"
         environment:
             - MYSQL_ROOT_PASSWORD=root_pass
