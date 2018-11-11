@@ -28,6 +28,9 @@ bash manifest/dev/1_build.sh
 ```
 bash manifest/dev/2_deploy.sh
 ```
+- first run may take some time as it needs to initialize and build mysql
+- once it is build `manifest/deve/db_data` will be populated (it is mounted as valume as permanent storage)
+- next time spinning up should be fast hence it will use existing volume
 - update your `/etc/hosts` file adding
 ```
 127.0.0.1 www.app.com

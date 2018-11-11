@@ -1,2 +1,4 @@
 /vendor
 /src/Config/parameters.json
+/manifest/dev/db_data/*
+!/manifest/dev/db_data/.gitkeep

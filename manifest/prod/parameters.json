@@ -2,7 +2,7 @@
     "environment": "prod",
     "databaseEngine": "mysql",
     "databaseHost": "some-real-sql-host",
-    "databasePort": "3306",
+    "databasePort": "some-real-sql-port",
     "databaseName": "some-real-database",
     "databaseUser": "some-real-user",
     "databasePassword": "some-real-pass"
